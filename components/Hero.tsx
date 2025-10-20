@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 
 export default function Hero() {
-  const heroRef = useRef<HTMLElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

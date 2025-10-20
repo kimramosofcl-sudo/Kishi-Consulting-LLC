@@ -421,5 +421,3 @@ To update the application:
 ---
 
 **Built with ❤️ for Kishi Consulting**
-#   K i s h i - C o n s u l t i n g - L L C  
- 

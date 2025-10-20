@@ -33,7 +33,7 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
