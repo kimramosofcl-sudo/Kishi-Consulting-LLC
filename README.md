@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kishi Consulting - Professional Financial Advisory Website
 
 A modern, responsive website built with React, Next.js, Tailwind CSS, and Firebase integration for professional financial consulting services.
@@ -421,3 +422,6 @@ To update the application:
 ---
 
 **Built with ❤️ for Kishi Consulting**
+=======
+
+>>>>>>> 28eefbc950bd8816756a6f27c88931b3e991f654
