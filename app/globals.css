@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2d2d;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-5;
+  }
+
+  .section-padding {
+    @apply py-20;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-primary mb-4 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-text-light text-center mb-12 max-w-3xl mx-auto;
+  }
+
+  .btn {
+    @apply inline-block px-8 py-3.5 rounded-lg font-semibold transition-all duration-300 text-base;
+  }
+
+  .btn-primary {
+    @apply bg-secondary text-primary hover:bg-secondary-light hover:-translate-y-0.5 hover:shadow-custom-hover;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary;
+  }
+
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-500 ease-out;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .service-card {
+    @apply bg-white p-10 rounded-lg shadow-custom transition-all duration-300 border-t-4 border-secondary hover:-translate-y-2.5 hover:shadow-custom-hover;
+  }
+
+  .service-icon {
+    @apply w-18 h-18 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-6 text-3xl;
+  }
+
+  .testimonial-card {
+    @apply bg-white p-10 rounded-lg shadow-custom relative;
+  }
+
+  .testimonial-card::before {
+    content: '"';
+    @apply absolute top-5 left-5 text-6xl text-secondary opacity-20 font-serif;
+  }
+
+  .stat-box {
+    @apply text-center p-6 bg-bg-light rounded-lg;
+  }
+
+  .stat-number {
+    @apply text-4xl font-bold text-secondary block;
+  }
+
+  .stat-label {
+    @apply text-text-light text-sm mt-2;
+  }
+
+  .form-group {
+    @apply mb-6;
+  }
+
+  .form-group label {
+    @apply block mb-2 text-text-dark font-medium;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    @apply w-full px-4 py-3 border-2 border-border-color rounded-lg font-sans text-base transition-colors duration-300 focus:outline-none focus:border-secondary;
+  }
+
+  .form-group textarea {
+    @apply resize-y min-h-32;
+  }
+
+  .form-group small {
+    @apply text-text-light text-sm;
+  }
+
+  .error-message {
+    @apply text-red-600 text-sm mt-1 hidden;
+  }
+
+  .info-item {
+    @apply flex gap-4 items-start;
+  }
+
+  .info-icon {
+    @apply w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white flex-shrink-0;
+  }
+
+  .social-link {
+    @apply w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white transition-all duration-300 hover:bg-secondary hover:-translate-y-1;
+  }
+
+  .back-to-top {
+    @apply fixed bottom-8 right-8 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary text-xl opacity-0 invisible transition-all duration-300 z-50 hover:bg-secondary-light hover:-translate-y-1;
+  }
+
+  .back-to-top.visible {
+    @apply opacity-100 block;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
